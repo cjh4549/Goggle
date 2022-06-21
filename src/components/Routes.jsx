@@ -1,9 +1,14 @@
 import React from 'react'
+import { Routes, Route, Navigate } from 'react-router-dom';
 
-export const Routes = () => {
+export const RoutePage = () => {
     return (
-        <div>
-            <h1>Routes</h1>
+        <div className="p-4">
+            <Routes>
+                <Route exact path="/">
+                    <Navigate to="/search" />
+                </Route>
+            </Routes>
         </div>
     );
 }
